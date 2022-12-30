@@ -9,19 +9,31 @@ const initialState = {
   error: null,
 };
 
-const getAllUsers = createAsyncThunk("users/getAllUsers", async () => {
+export const getAllUsers = createAsyncThunk("users/getAllUsers", async () => {
   try {
     const response = await axios.get(URL);
     console.log(response);
     return response.data;
   } catch (error) {
-    console.log(error);
+    return error.message;
   }
 });
 
-const userSlice = createSlice({
+export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {},
-  extraReducers: {},
+  extraReducers: {
+    [getAllUsers.pending]: (state) => {
+      state.isLoading = true;
+    },
+    [getAllUsers.fulfilled]: (state, { payload }) => {
+      state.isLoading = false;
+      state.users = payload;
+    },
+    [getAllUsers.rejected]: (state, { payload }) => {
+      state.isLoading = false;
+      state.error = payload;
+    },
+  },
 });

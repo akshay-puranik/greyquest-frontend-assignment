@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAllUsers } from "../../features/userSlice";
 
 const Home = () => {
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    getAllUsers();
+    // get data onload
+    dispatch(getAllUsers());
   }, []);
 
-  const store = useSelector((state) => state);
-  console.log(store);
 
   return <div></div>;
 };

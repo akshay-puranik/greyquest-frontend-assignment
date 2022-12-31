@@ -13,8 +13,9 @@ const HomePage = () => {
 
   const { users, isLoading } = useSelector((state) => state.user);
 
-
-  return (
+  return isLoading ? (
+    <div>Loading...</div>
+  ) : (
     <div className="gridContainer">
       {users && users.map((el) => <UserCard key={el.id} {...el} />)}
     </div>

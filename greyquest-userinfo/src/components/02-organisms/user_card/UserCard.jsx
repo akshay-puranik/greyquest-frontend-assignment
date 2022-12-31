@@ -18,6 +18,13 @@ const UserCard = ({
 
   return (
     <div className="cardContainer">
+      <div className="wallContainer"></div>
+      <div className="avatarContainer">
+        <img
+          src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
+          alt="avatar image"
+        />
+      </div>
       <div className="nameContainer hero">
         <p className="heading">Name:</p>
         <p>{name}</p>
@@ -30,7 +37,7 @@ const UserCard = ({
         <p className="heading">Email ID:</p>
         <p>{email}</p>
       </div>
-      <div className="addressContainer">
+      <div className="addressContainer flex">
         <p className="heading">Address:</p>
         <p>{fullAddress}</p>
       </div>

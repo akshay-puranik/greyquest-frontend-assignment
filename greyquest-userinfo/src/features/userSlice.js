@@ -5,7 +5,7 @@ const URL = "https://jsonplaceholder.typicode.com/users";
 
 const initialState = {
   users: [],
-  currentUser: null,
+  currentUser: {},
   isLoading: false,
   error: null,
 };

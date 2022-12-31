@@ -39,7 +39,7 @@ export const userSlice = createSlice({
     [getAllUsers.pending]: (state) => {
       state.isLoading = true;
     },
-    [getAllUsers.fulfilled]: (state, { payload }) => {
+    [getAllUsers.fulfilled]: (state, {payload}) => {
       state.isLoading = false;
       state.users = payload;
     },

@@ -26,29 +26,29 @@ const UserCard = ({
         />
       </div>
       <div className="nameContainer hero">
-        <p className="heading">Name:</p>
+        <p className="heading">Name</p>
         <p>{name}</p>
       </div>
       <div className="userNameContainer hero">
-        <p className="heading">Username:</p>
+        <p className="heading">Username</p>
         <p>{username}</p>
       </div>
       <div className="emailContainer flex">
-        <p className="heading">Email ID:</p>
-        <p>{email}</p>
+        <p className="heading">Email</p>
+        <p>{email.toLowerCase()}</p>
       </div>
       <div className="addressContainer flex">
-        <p className="heading">Address:</p>
+        <p className="heading">Address</p>
         <p>{fullAddress}</p>
       </div>
       <div className="phoneContainer flex">
-        <p className="heading">Phone:</p>
+        <p className="heading">Phone</p>
         <p>{phone}</p>
       </div>
       <div className="websiteContainer flex">
-        <p className="heading">Website:</p>
+        <p className="heading">Website</p>
         <p>
-          <a href={website}>{website}</a>
+          <a href={"#"}>{website}</a>
         </p>
       </div>
       <div className="detailsContainer flex">

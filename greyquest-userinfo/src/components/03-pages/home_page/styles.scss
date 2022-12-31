@@ -1,6 +1,8 @@
 .gridContainer{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     padding: 40px;
-    gap: 40px;
+    gap: 80px;
+    background-color: #0d1117;
+    font-family: sans-serif;
 }

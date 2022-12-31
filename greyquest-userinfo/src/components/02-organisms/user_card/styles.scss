@@ -10,6 +10,8 @@
         gap:20px;
         border-radius: 10px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #161b22;
+        color: white;
         .avatarContainer{
             position: absolute;
             top: 80px;
@@ -58,10 +60,19 @@
         .heading{
             font-weight: 600;
             font-size: large;
-            min-width: 15%;
+            min-width: 20%;
         }
         .detailsContainer{
+            grid-column: span 2;
             justify-content: end;
         }
+        .websiteContainer{
+            grid-column: span 10;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
     }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import DetailsButton from "./components/00-atoms/00-buttons/details_button/DetailsButton";
+import UserCard from "./components/02-organisms/user_card/UserCard";
 import { getAllUsers } from "./features/userSlice";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   }, []);
 
   return <div className="App">
-    <DetailsButton/>
+    <UserCard/>
   </div>;
 
 }

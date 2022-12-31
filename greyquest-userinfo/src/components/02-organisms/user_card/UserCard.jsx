@@ -2,32 +2,16 @@ import React from "react";
 import DetailsButton from "../../00-atoms/00-buttons/details_button/DetailsButton";
 import "./styles.scss";
 
-const UserCard = () => {
-  const obj = {
-    id: 1,
-    name: "Leanne Graham",
-    username: "Bret",
-    email: "Sincere@april.biz",
-    address: {
-      street: "Kulas Light",
-      suite: "Apt. 556",
-      city: "Gwenborough",
-      zipcode: "92998-3874",
-      geo: {
-        lat: "-37.3159",
-        lng: "81.1496",
-      },
-    },
-    phone: "1-770-736-8031 x56442",
-    website: "hildegard.org",
-    company: {
-      name: "Romaguera-Crona",
-      catchPhrase: "Multi-layered client-server neural-net",
-      bs: "harness real-time e-markets",
-    },
-  };
-  const { id, name, username, email, address, phone, website, company } = obj;
-
+const UserCard = ({
+  id,
+  name,
+  username,
+  email,
+  address,
+  phone,
+  website,
+  company,
+}) => {
   const add = Object.values(address);
   add.pop();
   const fullAddress = add.join(" | ");
@@ -56,10 +40,12 @@ const UserCard = () => {
       </div>
       <div className="websiteContainer flex">
         <p className="heading">Website:</p>
-        <p><a href={website}>{website}</a></p>
+        <p>
+          <a href={website}>{website}</a>
+        </p>
       </div>
       <div className="detailsContainer flex">
-        <DetailsButton/>
+        <DetailsButton />
       </div>
     </div>
   );

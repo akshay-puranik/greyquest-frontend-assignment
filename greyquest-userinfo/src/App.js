@@ -1,20 +1,12 @@
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import DetailsButton from "./components/00-atoms/00-buttons/details_button/DetailsButton";
-import UserCard from "./components/02-organisms/user_card/UserCard";
-import { getAllUsers } from "./features/userSlice";
+import AllRoutes from "./components/02-organisms/AllRoutes";
 
 function App() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getAllUsers());
-  }, []);
-
-  return <div className="App">
-    <UserCard/>
-  </div>;
-
+  return (
+    <div className="App">
+      <AllRoutes />
+    </div>
+  );
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import React from "react";
+import DetailsButton from "../../00-atoms/00-buttons/details_button/DetailsButton";
 import "./styles.scss";
 
 const UserCard = () => {
@@ -56,6 +57,9 @@ const UserCard = () => {
       <div className="websiteContainer flex">
         <p className="heading">Website:</p>
         <p><a href={website}>{website}</a></p>
+      </div>
+      <div className="detailsContainer flex">
+        <DetailsButton/>
       </div>
     </div>
   );

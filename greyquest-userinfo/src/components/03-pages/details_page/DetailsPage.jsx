@@ -25,12 +25,11 @@ const DetailsPage = () => {
   } = currentUser;
 
   const { street, suite, city, zipcode, geo } = address;
-  const { catchPhrase, bs } = company;
 
   console.log(address, company);
 
   return isLoading ? (
-    <div>Loading</div>
+    <div>Loading...</div>
   ) : (
     <div className="pageContainer">
       <header>User Details</header>

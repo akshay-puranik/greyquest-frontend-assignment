@@ -20,6 +20,17 @@ export const getAllUsers = createAsyncThunk("users/getAllUsers", async () => {
   }
 });
 
+export const getSingleUser = createAsyncThunk("users/getSingleUser", async (id) => {
+  try {
+    const response = await axios.get(URL+`/${id}`);
+    return response.data;
+  } catch (error) {
+    return error.message;
+  }
+});
+
+
+
 export const userSlice = createSlice({
   name: "user",
   initialState,
@@ -33,6 +44,17 @@ export const userSlice = createSlice({
       state.users = payload;
     },
     [getAllUsers.rejected]: (state, { payload }) => {
+      state.isLoading = false;
+      state.error = payload;
+    },
+    [getSingleUser.pending]: (state) => {
+      state.isLoading = true;
+    },
+    [getSingleUser.fulfilled]: (state, { payload }) => {
+      state.isLoading = false;
+      state.currentUser = payload;
+    },
+    [getSingleUser.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.error = payload;
     },

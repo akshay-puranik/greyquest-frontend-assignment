@@ -2,10 +2,15 @@
     padding: 10px 30px;
     border-radius: 0 10px;
     border: none;
-    background-color: aquamarine;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
 .detailsButton:hover{
-    background-color: green;
+    background-color: white;
+    color: black;
     cursor: pointer;
 }

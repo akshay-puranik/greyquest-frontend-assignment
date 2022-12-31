@@ -9,7 +9,7 @@
         padding: 15px;
         gap:20px;
         border-radius: 10px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: rgba(240, 240, 240, 0.2) 0px 8px 24px;
         background-color: #161b22;
         color: white;
         .avatarContainer{
@@ -63,11 +63,11 @@
             min-width: 20%;
         }
         .detailsContainer{
-            grid-column: span 2;
+            grid-column: span 3;
             justify-content: end;
         }
         .websiteContainer{
-            grid-column: span 10;
+            grid-column: span 9;
             a{
                 color: white;
                 text-decoration: none;

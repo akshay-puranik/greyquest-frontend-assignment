@@ -45,7 +45,7 @@ const UserCard = ({
         </p>
       </div>
       <div className="detailsContainer flex">
-        <DetailsButton />
+        <DetailsButton id={id} />
       </div>
     </div>
   );

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
+
+const URL = ""
 
 const DetailsPage = () => {
-  return (
-    <div>DetailsPage</div>
-  )
-}
+  const {id} = useParams();
 
-export default DetailsPage
+  
+
+  return <div>DetailsPage</div>;
+};
+
+export default DetailsPage;

@@ -7,9 +7,9 @@
         grid-template-columns: repeat(12,1fr);
         padding: 15px;
         gap:20px;
-        background-color: #f6f6f6;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         .emailContainer{
-            gap: 20px;
             align-items: center;
         }
         .addressContainer{
@@ -20,6 +20,7 @@
             display: flex;
             justify-content: space-between;
             grid-column: span 12;
+            gap: 20px;
         }
         .hero{
             padding: 10px;

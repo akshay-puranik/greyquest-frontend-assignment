@@ -37,10 +37,6 @@ const UserCard = ({
         <p className="heading">Email</p>
         <p>{email.toLowerCase()}</p>
       </div>
-      {/* <div className="addressContainer flex">
-        <p className="heading">Address</p>
-        <p>{fullAddress}</p>
-      </div> */}
       <div className="phoneContainer flex">
         <p className="heading">Phone</p>
         <p>{phone}</p>

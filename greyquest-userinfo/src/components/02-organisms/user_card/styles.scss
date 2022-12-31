@@ -11,7 +11,7 @@
         border-radius: 10px;
         box-shadow: rgba(240, 240, 240, 0.2) 0px 8px 24px;
         background-color: #161b22;
-        color: white;
+        color: rgb(151, 146, 146);
         .avatarContainer{
             position: absolute;
             top: 80px;
@@ -61,6 +61,7 @@
             font-weight: 600;
             font-size: large;
             min-width: 20%;
+        color: white;
         }
         .detailsContainer{
             grid-column: span 3;
@@ -69,7 +70,8 @@
         .websiteContainer{
             grid-column: span 9;
             a{
-                color: white;
+        color: rgb(151, 146, 146);
+                
                 text-decoration: none;
             }
         }

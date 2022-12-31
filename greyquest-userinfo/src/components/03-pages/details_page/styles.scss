@@ -1,0 +1,64 @@
+
+.pageContainer{
+    background-color: #0d1117;
+    height: 100vh;
+    color: white;
+    // text-align: center;
+}
+
+
+header{
+    padding: 30px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.detailsContainer{
+    min-width: 600px;
+    display:flex;
+    font-size: large;
+    font-family: sans-serif;
+
+    .imageContainer{
+        img{
+            height: 200px;
+            border-radius: 100%;
+        }
+        margin: auto;
+    }
+    
+    .dataContainer{
+        margin: auto;
+        width: 60%;
+    }
+
+    .addressFlex{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    .containers{
+        padding: 35px;
+    }
+
+    .flex{
+        display: flex;
+        gap: 30px;
+        // align-items: center;
+    }
+    .main{
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .heading{
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+    .hero{
+        display: flex;
+        gap: 30px;
+    }
+}

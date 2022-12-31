@@ -7,16 +7,16 @@
     font-family: sans-serif;
 }
 
-$layout-breakpoint-medium: 1200px;
-$layout-breakpoint-small: 800px;
+$breakpoint-medium: 1200px;
+$breakpoint-small: 800px;
 
-@media (max-width: $layout-breakpoint-medium) {
+@media (max-width: $breakpoint-medium) {
     .gridContainer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: $layout-breakpoint-small) {
+@media (max-width: $breakpoint-small) {
     .gridContainer {
         grid-template-columns: repeat(1, 1fr);
     }

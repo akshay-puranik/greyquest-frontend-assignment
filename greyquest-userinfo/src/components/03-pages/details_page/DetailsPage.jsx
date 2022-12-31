@@ -26,7 +26,6 @@ const DetailsPage = () => {
 
   const { street, suite, city, zipcode, geo } = address;
 
-  console.log(address, company);
 
   return isLoading ? (
     <div>Loading...</div>

@@ -4,7 +4,6 @@
     height: 100vh;
     color: white;
     padding: 100px;
-    // text-align: center;
 }
 
 
@@ -84,6 +83,37 @@ header{
             color: white;
             text-decoration: none;
 
+        }
+    }
+
+}
+$breakpoint-medium: 1200px;
+$breakpoint-small: 500px;
+
+@media (max-width: $breakpoint-medium) {
+    .pageContainer{
+        padding: 50px;
+    }
+    .detailsContainer {
+        // background-color: white;
+        flex-direction: column;
+        .dataContainer{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width: $breakpoint-small) {
+    .pageContainer{
+        padding: 30px;
+    }
+    .detailsContainer {
+        // background-color: white;
+        flex-direction: column;
+        .dataContainer{
+            width: 100%;
+            justify-content: space-around;
+            flex-direction: column;
         }
     }
 }

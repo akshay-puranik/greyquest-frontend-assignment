@@ -5,6 +5,7 @@ const URL = "https://jsonplaceholder.typicode.com/users";
 
 const initialState = {
   users: [],
+  currentUser: null,
   isLoading: false,
   error: null,
 };
@@ -12,7 +13,7 @@ const initialState = {
 export const getAllUsers = createAsyncThunk("users/getAllUsers", async () => {
   try {
     const response = await axios.get(URL);
-    console.log(response);
+    console.log(response.data);
     return response.data;
   } catch (error) {
     return error.message;

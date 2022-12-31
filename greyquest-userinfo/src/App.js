@@ -1,12 +1,19 @@
-import React from 'react';
-import Home from './pages/Home/Home';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import DetailsButton from "./components/00-atoms/00-buttons/details_button/DetailsButton";
+import { getAllUsers } from "./features/userSlice";
 
 function App() {
-  return (
-    <div className="App">
-      <Home/>
-    </div>
-  );
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllUsers());
+  }, []);
+
+  return <div className="App">
+    <DetailsButton/>
+  </div>;
+
 }
 
 export default App;

@@ -1,7 +1,9 @@
-
+*{
+    box-sizing: border-box;
+}
 .pageContainer{
     background-color: #0d1117;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     padding: 100px;
 }
@@ -36,7 +38,6 @@ header{
 
     .addressFlex{
         display: flex;
-        width: 300px;
         justify-content: space-between;
         p{
             margin: 10px 0;
@@ -85,10 +86,13 @@ header{
 
         }
     }
+    .piece{
+        width: 40%;
+    }
 
 }
 $breakpoint-medium: 1200px;
-$breakpoint-small: 500px;
+$breakpoint-small: 600px;
 
 @media (max-width: $breakpoint-medium) {
     .pageContainer{
@@ -114,6 +118,10 @@ $breakpoint-small: 500px;
             width: 100%;
             justify-content: space-around;
             flex-direction: column;
+        }
+        .piece{
+            width: 80%;
+            justify-content: space-between;
         }
     }
 }

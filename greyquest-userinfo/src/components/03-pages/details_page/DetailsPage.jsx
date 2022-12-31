@@ -40,7 +40,7 @@ const DetailsPage = () => {
           />
         </div>
         <div className="dataContainer containers">
-          <div className="dataLeft">
+          <div className="dataLeft piece">
             <div className="main nameContainer hero">
               <p className="heading">Name:</p>
               <p>{name}</p>
@@ -64,7 +64,7 @@ const DetailsPage = () => {
               </p>
             </div>
           </div>
-          <div className="dataRight">
+          <div className="dataRight piece">
             <div className="main addressContainer">
               <p className="heading">Address:</p>
               <div className="addressFlex">

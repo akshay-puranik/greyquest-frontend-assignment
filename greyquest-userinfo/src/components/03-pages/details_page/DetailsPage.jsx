@@ -84,6 +84,10 @@ const DetailsPage = () => {
                 </div>
               </div>
             </div>
+            <div className="companyContainer">
+              <p className="heading">Company:</p>
+              <p>{company.name}</p>
+            </div>
           </div>
         </div>
       </div>

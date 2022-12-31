@@ -3,6 +3,7 @@
     background-color: #0d1117;
     height: 100vh;
     color: white;
+    padding: 100px;
     // text-align: center;
 }
 
@@ -15,7 +16,6 @@ header{
 }
 
 .detailsContainer{
-    min-width: 600px;
     display:flex;
     font-size: large;
     font-family: sans-serif;
@@ -31,12 +31,17 @@ header{
     .dataContainer{
         margin: auto;
         width: 60%;
+        display: flex;
+        justify-content: space-around;
     }
 
     .addressFlex{
         display: flex;
         width: 300px;
         justify-content: space-between;
+        p{
+            margin: 10px;
+        }
     }
 
     .containers{
@@ -46,7 +51,8 @@ header{
     .flex{
         display: flex;
         gap: 30px;
-        // align-items: center;
+        align-items: center;
+        justify-content: space-between;
     }
     .main{
         padding: 0 10px;
@@ -55,10 +61,23 @@ header{
     .heading{
         font-weight: 600;
         margin-bottom: 20px;
-        font-size: larger;
+        font-size: x-large;
     }
     .hero{
         display: flex;
         gap: 30px;
+        justify-content: space-between;
+    }
+    .headingSmall{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .websiteContainer{
+        a{
+            color: white;
+            text-decoration: none;
+
+        }
     }
 }
